@@ -1,0 +1,18 @@
+/* HomePage.module.css */
+.homepageContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+  .homepageContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "hero faq";
+  }
+}
